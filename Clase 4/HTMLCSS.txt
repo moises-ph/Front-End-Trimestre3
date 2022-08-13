@@ -1,0 +1,7 @@
+Consultar los siguientes símbolos en CSS:
+> + ~ ¿Qué hacen?
+--
+
+Páginas de apoyo para html css
+https://cssreference.io/
+https://htmlreference.io/

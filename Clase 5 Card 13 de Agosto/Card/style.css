@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;  
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #171f24;
+}
+
+.card{
+  width: 35vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  background-color: #9e2596;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow: 0 0 20px #e100ff;
+}
+
+.img-card{
+  width:50%;
+  height: 100%;
+  z-index: 1;
+}
+
+.img-card img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.main-card{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.main-card h2{
+  font-size: 3rem;
+}
+
+.main-card p {
+  color: #0d0f11;
+  font-size: 2rem;
+  margin: 2%;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.main-card p{
+  font-size: 2rem;
+}
+
+.main-card .white-bold{
+  color: #F8EAF8;
+  text-shadow: 0 0 20px #0804ff;
+}
+
+.main-card button{
+  width: 90%;
+  height: 15%;
+  background-color: #171E24;
+  color: #F8EAF8;
+  font-size: 1.5rem;
+  border: solid 1px #F8EAF8;
+}
