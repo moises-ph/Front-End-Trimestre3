@@ -173,10 +173,12 @@ header .search-info-header .shopp-cart svg{
 
 header .search-info-header .shopp-cart svg text{
     position: absolute;
+    background-color: black;
     color: white;
     width: 20px;
     height: 20px;
     z-index: 4;
+    font-size: 5rem;
 }
 
 /* Main */
@@ -304,13 +306,19 @@ main .video {
 
 main .instagram-section{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: center;
+    width: 60%;
 }
 
-main .instagram-section .profile-container-instagram{
+main .instagram-section .insta-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .instagram-section .insta-container .profile-container-instagram{
     display: flex;
     justify-content: center;
     position: relative;
@@ -318,38 +326,38 @@ main .instagram-section .profile-container-instagram{
     height: 50px;
 }
 
-main .instagram-section .profile-container-instagram img{
+main .instagram-section .insta-container .profile-container-instagram img{
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-main .instagram-section .profile-container-instagram div{
+main .instagram-section .insta-container .profile-container-instagram div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-main .instagram-section .profile-container-instagram div p{
+main .instagram-section .insta-container .profile-container-instagram div p{
     font-size: x-large;
 }
 
-main .instagram-section .profile-container-instagram div .follow{
+main .instagram-section .insta-container .profile-container-instagram div .follow{
     font-size: small;
     color:rgb(77, 77, 77);
     letter-spacing: 2px;
 }
 
-main .instagram-section .container-follow{
+main .instagram-section .insta-container .container-follow{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
 }
 
-main .instagram-section .container-follow a{
+main .instagram-section .insta-container .container-follow a{
     width: 100%;
     height: 100%;
     border: rgb(51, 51, 51) solid 1px;
@@ -358,11 +366,13 @@ main .instagram-section .container-follow a{
     align-items: center;
     text-decoration: none;
     color:rgb(51, 51, 51);
+    font-size: 1.25rem;
 }
 
 main .instagram-section .container-follow a svg{
     margin: 0 6px;
     margin-left: 0;
+    margin-top: 2px;
 }
 
 main .instagram-section .container-follow a :hover{
