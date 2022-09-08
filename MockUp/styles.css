@@ -304,27 +304,68 @@ main .video {
 
 main .instagram-section{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 70%;
 }
 
-main .instagram-section .profile-container{
+main .instagram-section .profile-container-instagram{
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 90px;
+    position: relative;
+    width: 200px;
+    height: 50px;
 }
 
-main .instagram-section .profile-container img{
+main .instagram-section .profile-container-instagram img{
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-main .instagram-section .profile-container{
+main .instagram-section .profile-container-instagram div{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+}
+
+main .instagram-section .profile-container-instagram div p{
+    font-size: x-large;
+}
+
+main .instagram-section .profile-container-instagram div .follow{
+    font-size: small;
+    color:rgb(77, 77, 77);
+    letter-spacing: 2px;
+}
+
+main .instagram-section .container-follow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+}
+
+main .instagram-section .container-follow a{
+    width: 100%;
+    height: 100%;
+    border: rgb(51, 51, 51) solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:rgb(51, 51, 51);
+}
+
+main .instagram-section .container-follow a svg{
+    margin: 0 6px;
+    margin-left: 0;
+}
+
+main .instagram-section .container-follow a :hover{
+    color:rgba(97, 98, 98, 0.427);
+    border-color: rgb(97, 98, 98, 0.427);;
 }
