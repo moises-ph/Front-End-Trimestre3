@@ -227,7 +227,7 @@ main .section-new-designs .new{
 }
 
 main .section-new-designs .new:hover{
-    background-color: rgba(59, 57, 57);
+    background-color: rgb(59, 57, 57);
     color: white;
 }
 
