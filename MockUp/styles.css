@@ -308,18 +308,21 @@ main .instagram-section{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 90%;
 }
 
 main .instagram-section .insta-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
+    height: 80px;
+    margin-bottom: 10px;
 }
 
 main .instagram-section .insta-container .profile-container-instagram{
     display: flex;
+    align-items: center;
     justify-content: center;
     position: relative;
     width: 200px;
@@ -378,4 +381,33 @@ main .instagram-section .container-follow a svg{
 main .instagram-section .container-follow a :hover{
     color:rgba(97, 98, 98, 0.427);
     border-color: rgb(97, 98, 98, 0.427);;
+}
+
+main .insta-photos{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+main .insta-photos .img-insta{
+    display: inline-block;
+    text-align: center;
+    width: 308px;
+    height: 308px;
+    margin: 7px 7px;
+    position: relative;
+}
+
+main .insta-photos .img-insta img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+main .insta-photos .img-insta p{
+    position: absolute;
+    align-self: center;
 }
