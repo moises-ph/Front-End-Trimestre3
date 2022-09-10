@@ -1,6 +1,6 @@
 /* Importar Fuente */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 /* Configuracion Inicial */
 
@@ -308,7 +308,8 @@ main .instagram-section{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 70%;
+    margin-bottom: 50px;
 }
 
 main .instagram-section .insta-container{
@@ -380,24 +381,28 @@ main .instagram-section .container-follow a svg{
 
 main .instagram-section .container-follow a :hover{
     color:rgba(97, 98, 98, 0.427);
-    border-color: rgb(97, 98, 98, 0.427);;
+    border-color: rgb(97, 98, 98, 0.427);
 }
 
 main .insta-photos{
     display: grid;
     width: 80%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 9px;
+    place-items: center;
 }
 
 main .insta-photos .img-insta{
-    display: inline-block;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
     text-align: center;
     width: 308px;
     height: 308px;
-    margin: 7px 7px;
+    margin-bottom: 4px;
+    margin-left: 4px;
     position: relative;
 }
 
@@ -408,6 +413,45 @@ main .insta-photos .img-insta img{
 }
 
 main .insta-photos .img-insta p{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 2px 5px;
     position: absolute;
     align-self: center;
+    font-size: 1.5rem;
+    color: transparent;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+main .insta-photos .img-insta p:hover{
+    background-color: rgba(22, 22, 22, 0.466);
+    color: white;
+}
+
+main .insta-photos .img-insta svg{
+    position: absolute;
+    background-color: rgba(22, 22, 22, 0.466);
+    align-self: flex-start;
+    top: 8px;
+    left: 270px;
+    right: 10px;
+}
+
+main .instagram-section button{
+    margin: 50px 0;
+    height: 40px;
+    width: 150px;
+    font-size: medium;
+    font-weight: 300;
+    background-color: #FFFF;
+    border: 1px solid rgb(48, 47, 47);
+    transition: 0.5s;
+}
+
+main .instagram-section button:hover{
+    color:rgba(66, 66, 66, 0.427);
+    border-color: rgba(69, 70, 70, 0.427);
 }
