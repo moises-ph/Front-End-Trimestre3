@@ -386,10 +386,9 @@ main .instagram-section .container-follow a :hover{
 
 main .insta-photos{
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
+    grid-template-columns: repeat(3, 308px);
+    grid-template-rows: repeat(2, 312px);
+    grid-column-gap: 9px;
     grid-row-gap: 9px;
     place-items: center;
 }
