@@ -11,6 +11,7 @@
 }
 
 body{
+    display: block;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -30,7 +31,7 @@ header{
     position: fixed;
     background-color: white;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 header .up-barr{
@@ -189,8 +190,10 @@ main{
     align-items: center;
     justify-content: center;
     width: 100%;
-    top: 200px;
-    position: relative;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    z-index: 1;
 }
 
 main section{
@@ -453,18 +456,20 @@ main .instagram-section button{
 main .instagram-section button:hover{
     color:rgba(66, 66, 66, 0.427);
     border-color: rgba(69, 70, 70, 0.427);
+    cursor: pointer;
 }
 
 main .form-social{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 200px;
+    width: 1000px;
+    height: 195px;
 }
 
 main .form-social form{
     height: 70%;
-    width: 50%;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -494,6 +499,7 @@ main .form-social form .email input{
     padding-left: 20px;
     border: none;
     border-bottom: 1px solid black;
+    outline: none;
 }
 
 main .form-social form .email input::-webkit-input-placeholder{
@@ -535,15 +541,83 @@ main .form-social form .names .nam input:focus{
     border: 2px rgba(60, 60, 60, 0.996) solid;
 }
 
-main .form-social .social{
-    width: 20%;
-    margin-left: 4%;
+main .form-social form .submit{
+    height: 42px;
+    width: 181px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(49, 48, 48);
+    font-weight: 900;
+    letter-spacing: 1px;
+    background-color: white;
+    box-shadow: none;
+    border: 2px solid rgba(59, 57, 57);
+    transition: 0.25s;
+    align-self: flex-end;
+    margin-bottom: 7px;
 }
 
-main .form-social .submit{
-    width: 182px;
-    height: 42px;
-    align-self: end;
-    margin-bottom: 4px;
-    background-color: #FFFF;
+main .form-social form .submit:hover{
+    background-color: rgb(59, 57, 57);
+    color: white;
+    cursor: pointer;
+}
+
+main .form-social form p{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+main .form-social form p a{
+    text-decoration: underline;
+    color: black;
+}
+
+
+main .form-social .social{
+    width: 200px;
+    margin-left: 4%;
+    height: 195px;
+}
+
+main .form-social .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
+    border-top: 1px rgb(104, 104, 104) solid;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: baseline;
+    z-index: 1;
+    position: relative;
+}
+
+footer ul{
+    margin-top: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer ul li{
+    margin: 0 15px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
 }
